@@ -1,0 +1,27 @@
+using UnityEngine;
+
+public class ScreenshotMover : MonoBehaviour
+{
+    public void MoveToDCIM()
+    {
+        // Get the path to the DCIM directory
+        string dcimPath = System.IO.Path.Combine(
+            System.Environment.GetExternalStoragePublicDirectory(
+                System.Environment.DirectoryDcim).ToString(), "MyScreenshots");
+
+        // Check if the directory exists, if not, create it
+        if (!System.IO.Directory.Exists(dcimPath))
+        {
+            System.IO.Directory.CreateDirectory(dcimPath);
+        }
+
+        // Define the source and destination paths
+        string sourcePath = System.IO.Path.Combine(Application.persistentDataPath, "Screenshot.png");
+        string destinationPath = System.IO.Path.Combine(dcimPath, "Screenshot.png");
+
+        // Move the file
+        System.IO.File.Move(sourcePath, destinationPath);
+
+        Debug.Log("Screenshot moved to DCIM!");
+    }
+}

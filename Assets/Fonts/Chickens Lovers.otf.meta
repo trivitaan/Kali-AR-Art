@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 6c4342925cf12eb49afe8a73e76f09c1
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Chickens Lovers
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8baa689c4d00d47419181269471d3c77, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
